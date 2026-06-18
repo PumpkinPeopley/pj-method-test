@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Site</title>
+    <!-- These scripts act as a proxy to bypass Google's iframe block -->
+    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+        iframe { width: 100%; height: 100%; border: none; }
+    </style>
+</head>
+<body>
+
+    <!-- The custom attribute "is=x-frame-bypass" is what makes it work -->
+    <iframe is="x-frame-bypass" src="https://sites.google.com/portlandct.us/thepjmethod/home"></iframe>
+
+</body>
+</html>
